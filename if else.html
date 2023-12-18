@@ -1,0 +1,58 @@
+<script>
+
+
+const word0 = 'wasap';
+const word0trans = 'салам';
+
+const word1 = 'bye';
+const word1trans = 'пока';
+
+const word2 = 'dev';
+const word2trans = 'програмист';
+
+const finishUNMessage = 'Молодец но старайся лучше';
+
+const finishMessage = 'Молодец так держать';
+
+
+
+let correctAns = 0;
+let wordscount =3;
+const minCorrectPercent = 50;
+
+
+
+
+const userAnswer0 = prompt(word0);
+alert(userAnswer0===word0trans);
+if (userAnswer0===word0trans){
+    correctAns +=1
+}
+
+const userAnswer1 = prompt(word1);
+alert(userAnswer1===word1trans);
+if (userAnswer1===word1trans){
+    correctAns +=1
+}
+
+
+
+const userAnswer2 = prompt(word2);
+alert(userAnswer2===word2trans);
+if (userAnswer2===word2trans){
+    correctAns +=1
+}
+
+const userCorAnserPer = correctAns/wordscount*100;
+
+if (userCorAnserPer>minCorrectPercent){
+alert(finishMessage)
+}else{
+    alert(finishUNMessage)
+}
+
+
+
+
+
+</script>
