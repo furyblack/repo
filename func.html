@@ -1,0 +1,51 @@
+<script>
+    let balance = 300;
+
+    const price0 = prompt('введи цену первого товара ');
+    
+     const price1 = prompt('введи цену второго товара ');
+    
+        
+    
+    
+    const price2 = prompt('введи цену третьего товара ');
+    //--------------------------
+
+
+    
+
+    document.write('start', '<br>');
+    
+    if (balance >= price0) {
+        document.write('first Product purchased ', '<br>');
+        balance = balance - price0
+        if (balance >= price1) {
+            document.write('second Product purchased ', '<br>');
+            balance = balance - price1
+            if (balance >= price2) {
+                document.write('third Product purchased ', '<br>');
+                balance = balance - price1
+            }
+        }
+
+    }
+
+
+
+
+
+    else {
+        document.write('Not enought money', '<br>')
+    }
+    document.write('balance after purchas is ', balance)
+
+    /*
+    if (price>balance){
+        document.write('not enought money')
+
+    }else{
+        document.write('product purchased')
+    }
+    */
+
+</script>

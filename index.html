@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script type="text/javascript">
+    let  word0 = 'wasup';
+    let  word1 = 'buy';
+    let  word2 = 'programmer';
+
+    let  word0translation = 'Здарова';
+    let  word1translation = 'Покеда';
+    let  word2translation = 'программист';
+
+    let correctAnswercount = 0;
+    const wordcount =3;
+
+     
+
+    const userAnser0 = prompt(word0);
+    alert(userAnser0===word0translation);
+    if (userAnser0===word0translation){
+      correctAnswercount=correctAnswercount+1;
+    }
+
+    const userAnser1 = prompt(word1);
+    alert(userAnser1===word1translation);
+    if (userAnser1===word1translation){
+      correctAnswercount=correctAnswercount+1;
+    }
+
+    const userAnser2 = prompt(word2);
+    alert(userAnser2===word2translation);
+    if (userAnser2===word2translation){
+      correctAnswercount=correctAnswercount+1;
+    }
+
+   
+
+    if (correctAnswercount/wordcount*100>50){
+      alert('Отлично')
+
+    }
+    else{
+      alert('молодец но старайся лучше')
+    }
+
+  
+  </script>
+  
+</body>
+</html>
+
