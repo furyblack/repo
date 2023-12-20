@@ -1,15 +1,15 @@
 <script>
     const words = [
         {
-            originalal: 'wassap',
+            original: 'wassap',
             translation: 'салам'
         },
         {
-            originalal: 'bye',
+            original: 'bye',
             translation: 'пока'
         },
         {
-            originalal: 'programmer',
+            original: 'programmer',
             translation: 'разраб'
         }
 
@@ -42,29 +42,18 @@
 
     alert(notificationMessages.start.hello)
 
-
-    const userAnswer0 = prompt(words[0].original);
-    alert(userAnswer0 === words[0].translation);
-    if (userAnswer0 === words[0].translation) {
-        result.correctAnswersCount = result.correctAnswersCount + 1;
-    }
-
-    const userAnswer1 = prompt(words[1].original);
-    alert(userAnswer1 === words[1].translation);
-    if (userAnswer1 === words[1].translation) {
-        result.correctAnswersCount = result.correctAnswersCount + 1;
+    for (let i = 0; i < words.length; i++) {
+        let userAnswer = prompt(words[i].original);
+        alert(userAnswer === words[i].translation);
+        if (userAnswer === words[i].translation) {
+            result.correctAnswersCount = result.correctAnswersCount + 1;
+        }
     }
 
 
-    const userAnswer2 = prompt(words[2].original);
-    alert(userAnswer2 === words[2].translation);
-    if (userAnswer2 === words[2].translation) {
-        result.correctAnswersCount = result.correctAnswersCount + 1;
-    }
+    const userCorrectAswersPercent = result.correctAnswersCount / words.length * 100;
 
-    const userCorrectAswersPercent = result.correctAnswersCount / words.lenght * 100;
-
-    if (userCorrectAnswersPercent > settings.correctAnswersminPercent) {
+    if (userCorrectAswersPercent > settings.correctAnswersminPercent) {
         alert(notificationMessages.result.finishSuccess);
     } else {
         alert(notificationMessages.result.finishUnsuccess);
