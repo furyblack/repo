@@ -1,11 +1,8 @@
 // Setup
 function abTest(a, b) {
   // Only change code below this line
-if (a<0){
-  return
-}else if (b<0){
-  return
-}
+if (a<0 || b<0)
+return
 
 
   // Only change code above this line

@@ -38,7 +38,7 @@ const room ={
 
 }
 type studentType = {
-    
+
 }
 
 const student ={
@@ -66,3 +66,45 @@ console.log(student)
 
 console.log(student.tehnologys[2]
 )
+
+
+function sum(a: number, b: number){
+    return a+b
+}
+sum(5, 5)
+
+
+
+export const addSkill = (student:Student=StudentType, skill: string) =>{
+    student.technologies.push({
+        id: new Date().getDate(),
+        title: skill
+    })
+
+}
+
+export function maked (s: string){
+    return "sdf"
+}
+export const doesStudentLiveIn= (city: string, id: 13) =>{
+    return city='sldfj'
+}
+
+const ages = [14,325,345,1,2,56]
+
+type courseType = {
+    title:string
+    price: number
+}
+const course =[
+    {title: 'css', price: 22},
+    {title: 'htms', price: 2342342},
+    {title: 'js', price: 222},
+]
+const cheapeCourse = ()=>{
+    return course.price<160;
+}
+const  ages =[12,23,65,99,100]
+
+const oldAges = [100];
+
