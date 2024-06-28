@@ -22,3 +22,9 @@
 // }
 //
 // console.log(multiplyAll([[1, 2], [3, 4], [5, 6, 7]])); // Выводит 5040
+
+
+//как очисить такой массив
+//  let arrayList = ['п', 'р', 'и', 'в', 'е', 'т']
+// arrayList.splice(0,0) // не верный вариант а вот верный вот arrayList.splice(0,arrayList.length)
+// console.log(arrayList)
